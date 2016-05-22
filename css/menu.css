@@ -1,0 +1,61 @@
+body {
+    width: 100%;
+    height: auto;
+    overflow-x: auto;
+}
+
+.top {
+    width: 100%;
+    height: 3em;
+    background-color: purple;
+    display: table;
+    table-layout: fixed;
+}
+
+.top-logo {
+    width: 4em;
+    height: 100%;
+    background-color: plum;
+    display: table-cell;
+}
+
+.top-nav-menu {
+    width: 100%;
+    max-width: 10em;
+    height: 100%;
+    background-color: firebrick;
+    display: table-cell;
+}
+
+.top-nav-menu > nav {
+    display: table;
+    height: 100%;
+    border-spacing: 1.5em 0;
+    border-collapse: collapse;
+}
+
+.top-nav-menu > nav > p {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1em;
+    transition-duration: 0.3s;
+    padding: 0 2em;
+    cursor: pointer;
+}
+
+.top-nav-menu > nav > p:hover {
+    background-color: darkred;
+}
+
+.top-nav-menu > nav > p > a {
+    text-decoration: none;
+    color: black;
+}
+
+.top-resp-menu-icon {
+    display: none;
+}
+
+
+

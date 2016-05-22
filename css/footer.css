@@ -1,0 +1,56 @@
+.lower {
+    width: 100%;
+    height: 10em;
+    background-color: aquamarine;
+}
+
+.lower-top {
+    width: 50em;
+    height: 7em;
+    margin: auto;
+}
+
+.lower-bottom{
+    width: 50em;
+    height: 3em;
+    text-align: center;
+    margin: auto;
+}
+
+.lower-social-networks-logos {
+    width: 15em;
+    height: 7em;
+    float:left;
+    text-align: center;
+    display: table;
+}
+
+.lower-social-networks-logos  > p {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.lower-social-networks-logos  > p > img {
+    width: 2em;
+    height: 2em;
+    background-color: forestgreen;
+}
+
+.lower-right-links {
+    width: 25em;
+    height: 7em;
+    float:left;
+    display: table;
+}
+
+.lower-right-links > p {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.lower-right-links > p > a {
+    text-decoration: none;
+    color: black;
+}

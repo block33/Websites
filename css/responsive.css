@@ -1,0 +1,65 @@
+/* For tablets */
+@media only screen and (max-width: 850px) {
+    .middle-top {
+        width: 100%;
+    }
+    
+    .middle-top > div {
+        width: 17em;
+        height: 17em;
+    }
+    
+    .middle-top > div > img {
+        width: 10em;
+        height: 10em;
+    }
+}
+
+
+/* For phones */
+@media only screen and (max-width: 480px) {
+    .top-nav-menu {
+        display: none;
+    }
+    
+    .top-resp-menu-icon {
+        width: 4em;
+        height: 3em;
+        background-color: azure;
+        display: inline-block;
+        float: right;
+    }
+    
+    .middle-top > div {
+        width: 20em;
+        display: inline-block;
+    }
+    
+    .middle-lower > div {
+        width: 70%;
+        height: auto;
+        background-color:dimgrey;
+        display: inline-block;
+        position: relative;
+        border: 2px solid black;
+    }
+    
+    .middle-lower > div > p {
+        overflow-y: auto;
+    }
+    
+    .lower-social-networks-logos {
+        width: 10em;
+        height: 7em;
+        float:left;
+        text-align: center;
+        display: table;
+    }
+    
+    .lower-right-links {
+        width: 13em;
+        height: 7em;
+        float:left;
+        display: table;
+    }
+}
