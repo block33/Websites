@@ -1,0 +1,27 @@
+.footer {
+    width: 100%;
+    height: 4em;
+    position: fixed;
+    bottom: 0;
+}
+
+.social-links {
+    width: 13em;
+    height: 100%;
+    display: table;
+    table-layout: fixed;
+    text-align: center;
+}
+
+.social-links > p {
+    display: table-cell;
+    vertical-align: middle;
+    
+}
+
+.social-links > p > a > img {
+    width: 1.5em;
+    height: 1.5em;
+    cursor: pointer;
+    background-size: cover;
+}

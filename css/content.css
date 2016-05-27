@@ -1,7 +1,12 @@
+h2 {
+    font-family: "Trebuchet MS","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Tahoma,sans-serif;
+    opacity: 0.7
+}
+
 .middle {
     width: 100%;
     height: auto;
-    background-color: cornflowerblue;
+    background-color: #2D882D;
 }
 
 .middle-top {
@@ -24,8 +29,7 @@
     margin: 2em;
     vertical-align: top;
     position: relative;
-    background-color: bisque;
-    border-radius: 1em; 
+    background-color: bisque; 
 }
 
 .middle-top > div > img {
@@ -40,7 +44,6 @@
     width: 7em;
     height: 2em;
     margin: auto;
-    background-color: dodgerblue;
     display: table;
     transition: all ease 0.8s;
 }
@@ -67,17 +70,17 @@
 .middle-lower {
     width: 100%;
     height: auto;
-    background-color: crimson; 
+    background-color: #55AA55; 
     text-align: center;
 }
 
 .middle-lower > div {
     width: 25em;
     height: 30em;
-    background-color:dimgrey;
+    background-color:#55AA55;
     display: inline-block;
     position: relative;
-    border-radius: 1em;
+    margin: 0 -4px;
 }
 
 .middle-lower > div:after {
@@ -102,6 +105,7 @@
     margin: auto;
     overflow-y: auto;
     text-align: justify;
+    font-family: Futura,"Trebuchet MS",Arial,sans-serif;
     font-size: 1.2em;
 }
 

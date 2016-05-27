@@ -6,10 +6,10 @@ body {
 
 .top {
     width: 100%;
-    height: 3em;
-    background-color: purple;
+    height: 6em;
     display: table;
     table-layout: fixed;
+    
 }
 
 .top-logo {
@@ -23,7 +23,7 @@ body {
     width: 100%;
     max-width: 10em;
     height: 100%;
-    background-color: firebrick;
+    background-color: #2D882D;
     display: table-cell;
 }
 
@@ -32,25 +32,30 @@ body {
     height: 100%;
     border-spacing: 1.5em 0;
     border-collapse: collapse;
+    margin: auto;
 }
 
 .top-nav-menu > nav > p {
     display: table-cell;
     text-align: center;
     vertical-align: middle;
+    font-family: "Franklin Gothic Medium","Franklin Gothic","ITC Franklin Gothic",Arial,sans-serif;
     font-size: 1em;
     transition-duration: 0.3s;
     padding: 0 2em;
-    cursor: pointer;
-}
-
-.top-nav-menu > nav > p:hover {
-    background-color: darkred;
 }
 
 .top-nav-menu > nav > p > a {
     text-decoration: none;
     color: black;
+    padding: 0.2em;
+    transition: ease 0.4s;
+    opacity: 0.5;
+}
+
+.top-nav-menu > nav > p > a:hover {
+    color: white;
+    opacity: 1.0;
 }
 
 .top-resp-menu-icon {

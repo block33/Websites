@@ -1,0 +1,62 @@
+body {
+    min-width: 100%;
+    height: auto;
+    overflow-y: hidden;
+    background-color: #2D882D;
+}
+
+.top-horizontal-bar {
+    min-width: 100%;
+    min-height: 4em;
+    background-color: black;
+    opacity: 0.6;
+    position: relative;
+    z-index: 101;
+}
+
+.top-horizontal-bar > .back-icon {
+    width: 2em;
+    height: auto;
+    margin: 1em;
+    background-size: cover;
+    float: left;
+    cursor: pointer;
+}
+
+.top-horizontal-bar > .menu-icon {
+    width: 4em;
+    height: 4em;
+    float: right;
+    background-size: cover;
+    transition: ease-in 0.3s;
+    cursor: pointer;
+}
+
+.top-horizontal-bar > .back-icon > img,
+.top-horizontal-bar > .menu-icon > img{
+    width: 2em;
+    height: 2em;
+}
+
+.top-horizontal-bar > .menu-icon > img {
+    margin: 1em;
+}
+
+.top-horizontal-bar > .menu-icon:hover {
+    background-color: #54AA54;
+}
+
+.top-horizontal-bar > span {
+    width: 3em;
+    height: 1em;
+    font-size: 1.2em;
+    color: white;
+    letter-spacing: 3px;
+    font-family: "Trebuchet MS","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Tahoma,sans-serif;
+    opacity: 0.9;
+    left: 50%;
+    margin-top: 1.25em;
+    margin-bottom: 1.25em;
+    margin-left: -1.5em;
+    position: absolute;
+}

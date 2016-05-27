@@ -1,7 +1,7 @@
 .lower {
     width: 100%;
     height: 10em;
-    background-color: aquamarine;
+    background-color: #bf5e43;
 }
 
 .lower-top {
@@ -32,9 +32,11 @@
 }
 
 .lower-social-networks-logos  > p > img {
-    width: 2em;
-    height: 2em;
-    background-color: forestgreen;
+    width: 3em;
+    height: 3em;
+    border-radius:50%;
+    background-color: #fff;
+    cursor: pointer;
 }
 
 .lower-right-links {
@@ -53,4 +55,9 @@
 .lower-right-links > p > a {
     text-decoration: none;
     color: black;
+}
+
+.lower-bottom > p {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 0.8em;
 }
