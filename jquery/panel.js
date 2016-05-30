@@ -21,4 +21,10 @@ $(document).ready(function() {
         $(".panel").css("display") == "none";
         $(".panel").css("left", "0");
     }
+    
+    $(".menu-panel").css({"display" : "none"});
+    $(".menu-icon").click(function() {
+        $("")
+        $(".menu-panel").slideToggle();
+    });
 });

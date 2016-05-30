@@ -1,7 +1,7 @@
 body {
     min-width: 100%;
     height: auto;
-    overflow-y: hidden;
+    overflow: hidden;
     background-color: #2D882D;
 }
 
@@ -10,14 +10,13 @@ body {
     min-height: 4em;
     background-color: black;
     opacity: 0.6;
-    position: relative;
+    position: fixed;
     z-index: 101;
 }
 
 .top-horizontal-bar > .back-icon {
     width: 2em;
     height: auto;
-    margin: 1em;
     background-size: cover;
     float: left;
     cursor: pointer;
@@ -32,7 +31,12 @@ body {
     cursor: pointer;
 }
 
-.top-horizontal-bar > .back-icon > img,
+.top-horizontal-bar > .back-icon > a {
+    display: inline-block;
+    margin: 1em;
+}
+
+.top-horizontal-bar > .back-icon > a > img,
 .top-horizontal-bar > .menu-icon > img{
     width: 2em;
     height: 2em;
@@ -60,3 +64,59 @@ body {
     margin-left: -1.5em;
     position: absolute;
 }
+
+.menu-panel {
+    width: 15em;
+    height: 20em;
+    position: absolute;
+    right: 0;
+    top: 4em;
+    background-color: black;
+    z-index: 999;
+    opacity: 0.6;
+}
+
+.menu-panel > nav {
+    height: 100%;
+    width: 100%;
+}
+
+.menu-panel > nav > a {
+    display: block;
+    width: 73%;
+    height: 2em;
+    font-size: 2em;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    line-height: 2em;
+    font-family: "Trebuchet MS","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Tahoma,sans-serif;
+}
+
+.menu-panel > nav > a:hover {
+    background-color: #54AA54;
+    
+}
+
+/*
+.animate-in {
+    -webkit-animation: fadeIn .5s ease-in;
+    animation: fadeIn .5s ease-in;
+}
+
+.animate-out {
+    -webkit-transition: opacity .5s;
+    transition: opacity .5s;
+    opacity: 0;
+}
+
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+*/
