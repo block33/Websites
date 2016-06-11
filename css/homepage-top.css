@@ -1,101 +1,120 @@
 body {
-    min-width: 100%;
+    max-width: 100%;
     height: auto;
-    overflow: hidden;
-    background-color: #2D882D;
-}
-
-.top-horizontal-bar {
-    min-width: 100%;
-    min-height: 4em;
-    background-color: black;
-    opacity: 0.6;
-    position: fixed;
-    z-index: 101;
-}
-
-.top-horizontal-bar > .back-icon {
-    width: 2em;
-    height: auto;
-    background-size: cover;
-    float: left;
-    cursor: pointer;
-}
-
-.top-horizontal-bar > .menu-icon {
-    width: 4em;
-    height: 4em;
-    float: right;
-    background-size: cover;
-    transition: ease-in 0.3s;
-    cursor: pointer;
-}
-
-.top-horizontal-bar > .back-icon > a {
-    display: inline-block;
-    margin: 1em;
-}
-
-.top-horizontal-bar > .back-icon > a > img,
-.top-horizontal-bar > .menu-icon > img{
-    width: 2em;
-    height: 2em;
-}
-
-.top-horizontal-bar > .menu-icon > img {
-    margin: 1em;
-}
-
-.top-horizontal-bar > .menu-icon:hover {
-    background-color: #54AA54;
-}
-
-.top-horizontal-bar > span {
-    width: 3em;
-    height: 1em;
-    font-size: 1.2em;
-    color: white;
-    letter-spacing: 3px;
-    font-family: "Trebuchet MS","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Tahoma,sans-serif;
-    opacity: 0.9;
-    left: 50%;
-    margin-top: 1.25em;
-    margin-bottom: 1.25em;
-    margin-left: -1.5em;
-    position: absolute;
+    background-color: #095641;
 }
 
 .menu-panel {
-    width: 15em;
-    height: 20em;
-    position: absolute;
-    right: 0;
-    top: 4em;
-    background-color: black;
-    z-index: 999;
-    opacity: 0.6;
+    width: 13em;
+    height: 100%;
+    float: left;
+    position: fixed;
 }
 
 .menu-panel > nav {
     height: 100%;
     width: 100%;
+    background-color: black;
+    opacity: 0.6;
 }
 
-.menu-panel > nav > a {
+.menu-panel > nav > .menu > p > a,
+.menu-panel > nav > span{
     display: block;
-    width: 73%;
-    height: 2em;
-    font-size: 2em;
+    height: 3em;
+    width: 100%;
     text-decoration: none;
     color: #fff;
-    text-align: center;
-    line-height: 2em;
     font-family: "Trebuchet MS","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Tahoma,sans-serif;
+    text-align: center;
+    line-height: 3em;
+    transition: ease-in 0.1s;
 }
 
-.menu-panel > nav > a:hover {
-    background-color: #54AA54;
-    
+.menu-panel > nav > .menu {
+    width: 13em;
+    height: 9.2em;
+    top: 50%;
+    margin-top: -4.6em;
+    position: absolute;
+}
+
+.menu-panel > nav > .menu > p > img {
+    width: 20%;
+    height: 3em;
+    font-size: 1em;
+    /*border-bottom: 1px solid #FFFFFF;*/
+    float: right;
+    transform: scale(0.6);
+}
+
+.menu-panel > nav > .menu > p > a {
+    width: 50%;
+    font-size: 1em;
+    /*border-bottom: 1px solid #FFFFFF;*/
+    float: right;
+}
+.menu-panel > nav > span {
+    font-size: 1.2em;
+    color: white;
+    letter-spacing: 3px;
+    font-family: "Trebuchet MS","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Tahoma,sans-serif;
+    opacity: 0.9;
+    line-height: 3em;
+}
+
+.menu-panel > nav > .menu > p > a:hover {
+    color: dodgerblue;
+}
+
+
+/*.menu-panel > nav > p:nth-of-type(1) > a:hover {
+    background-color: #e84141;
+}
+
+.menu-panel > nav > p:nth-of-type(2) > a:hover {
+    background-color: #22995D;
+}
+
+.menu-panel > nav > p:nth-of-type(3) > a:hover {
+    background-color: #1597D4;
+}
+
+.menu-panel > nav > p > img {
+    width: 30%;
+    height: 100%;
+    float: left;
+}
+
+.menu-panel > nav > .home-button {
+    width: 6em;
+    height: 6em;
+    display: block;
+    margin: 2em auto;
+    bottom: 2em;
+}
+
+.menu-panel > nav > .home-button > img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+*/
+body::-webkit-scrollbar, 
+.middle-lower > div > p::-webkit-scrollbar {
+    width: 0.3em;
+    border-radius: 3em;
+}
+
+body::-webkit-scrollbar-track,
+.middle-lower > div > p::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(168,168,168,1);
+}
+ 
+body::-webkit-scrollbar-thumb,
+.middle-lower > div > p::-webkit-scrollbar-thumb {
+  background-color: gainsboro;
+  outline: 1px solid rgb(56,56,56);
 }
 
 /*

@@ -1,10 +1,12 @@
 $(document).ready(function() {
     var bool = true;
-    $(".middle > nav > #projects").click(function() {
+    $("#about-us, #contact-us, #join-us").click(function() {
         $(".panel").css("left", "-100%");
         if($(".panel").css("display") == "none") {
             $(".panel").css("display") == "show";
             $(".panel").animate({left: 0, opacity:"show"}, 500);
+        } else {
+            redisplayPanelWithText();
         }
     });
     
@@ -22,9 +24,19 @@ $(document).ready(function() {
         $(".panel").css("left", "0");
     }
     
-    $(".menu-panel").css({"display" : "none"});
+    function redisplayPanelWithText() {
+        $(".panel").css("left", "-100%");
+        $(".panel").css("display") == "show";
+        $(".panel").animate({left: 0, opacity:"show"}, 500);
+    }
+    
+   /* $(".menu-panel").css({"display" : "none"});
     $(".menu-icon").click(function() {
         $("")
         $(".menu-panel").slideToggle();
-    });
+    });*/
+    
+    function changeText() {
+        
+    }
 });

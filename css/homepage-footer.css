@@ -7,22 +7,54 @@
 }
 
 .social-links {
-    width: 13em;
-    height: 100%;
-    display: table;
-    table-layout: fixed;
-    text-align: center;
+    width: auto;
+    height: auto;
+    position: absolute;
+    left: 1.6em;
 }
 
 .social-links > p {
-    display: table-cell;
-    vertical-align: middle;
-    
+    float: left;
+    margin: 0.5em 0.2em;
+}
+
+.social-links > p > a {
+    display: block;
+    width: 2em;
+    height: 2em;
+    transition: ease-in 0.1s;
 }
 
 .social-links > p > a > img {
-    width: 1.5em;
-    height: 1.5em;
-    cursor: pointer;
+    width: 100%;
+    height: 100%;
     background-size: cover;
+}
+
+.social-links > p > a:hover {
+    transform-style: preserve-3d;
+    transform: scale(1.2);
+}
+
+.footer-links {
+    position: absolute;
+    width: 20em;
+    right: 0;
+    text-align: center;
+}
+
+.footer-links > p {
+    float: left;
+    margin: 1em;
+}
+
+.footer-links > p > a {
+    color: #F4F4F4;
+    text-decoration: none;
+    font-family: "Trebuchet MS","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Tahoma,sans-serif;
+    transition: ease-in 0.1s;
+}
+
+.footer-links > p > a:hover {
+    color: #056585;
 }

@@ -1,0 +1,99 @@
+.middle-projects-content {
+    position: absolute;
+    top: 3em;
+    width: 100%;
+    height: 100%;
+    z-index: 9997;
+    background: rgba(0,0,0,.5);
+    overflow-y: auto;
+    padding: 0;
+}
+
+.middle-bottom-content {
+    width: 100%;
+    height: 100%;
+}
+
+.middle-bottom-content:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: auto;
+}
+
+.middle-bottom-content > a {
+    width: auto;
+    margin: 0 auto;
+    word-spacing: 1em;
+    float: left;
+    text-decoration: none;
+    font-family: "Trebuchet MS","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Tahoma,sans-serif;
+    color: white;
+    font-size: 1.2em;
+    position: absolute;
+    z-index: 9999;
+    opacity: 0.8;
+    transition: ease-in 0.2s;
+}
+
+.middle-bottom-content > a:hover {
+    background-color: #e84141;
+}
+
+.middle-bottom-content > a:nth-of-type(1) {
+    left: 1em;
+    top: 1em;
+}
+
+.middle-bottom-content > a:nth-of-type(2) {
+    right: 1em;
+    top: 1em;
+}
+
+.middle-bottom-content > .middle-bottom-wrapper {
+    width: 80%;
+    height: auto;
+    background-color: #95A4AB;
+    position: absolute;
+    z-index: 9998;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    background: rgba(149,164,171,.2);
+    text-align: center;
+}
+
+.middle-bottom-content > .middle-bottom-wrapper > div {
+    display: inline-block;
+    width: 20em;
+    height: 20em;
+    background: rgba(111,133,145,.2);
+}
+
+.middle-bottom-content > .middle-bottom-wrapper > div > img {
+    width: 100%;
+    height: 80%;
+} 
+
+.middle-bottom-content > .middle-bottom-wrapper > div > p {
+    margin: 0.5em;
+    text-align: left;
+    height: auto;
+    color: white;
+    font-family: "Trebuchet MS","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Tahoma,sans-serif;
+}
+
+.middle-projects-content::-webkit-scrollbar {
+    width: 0.3em;
+    border-radius: 3em;
+}
+
+.middle-projects-content::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(168,168,168,1);
+}
+ 
+.middle-projects-content::-webkit-scrollbar-thumb {
+  background-color: gainsboro;
+  outline: 1px solid rgb(56,56,56);
+}
